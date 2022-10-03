@@ -1,0 +1,28 @@
+{
+  "name": "the-elder-scroll",
+  "version": "1.0.0",
+  "description": "Post-install script for new machines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomesdigital/the-elder-scroll.git"
+  },
+  "author": "gomesdigital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomesdigital/the-elder-scroll/issues"
+  },
+  "homepage": "https://github.com/gomesdigital/the-elder-scroll#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "clean-commit": "^1.0.3"
+  }
+}
