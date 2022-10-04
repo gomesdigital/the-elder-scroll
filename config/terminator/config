@@ -1,0 +1,19 @@
+[global_config]
+  window_state = fullscreen
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.55
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    show_titlebar = False
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

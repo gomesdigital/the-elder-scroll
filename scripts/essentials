@@ -1,0 +1,42 @@
+#! /bin/bash
+# ---------------------------------------------
+# Author: gomesdigital, 04/10/2022
+# Last Updated: 04/10/2022 
+# ---------------------------------------------
+# The essentials to get things done, comfortably.
+# ---------------------------------------------
+
+set -e  # exit on error
+
+source ./config/env  # load user configurations
+
+# EDITOR
+apt install vim
+cp ./config/vim/.vimrc /home/"$USERNAME"
+
+# EMULATOR
+apt install terminator
+mkdir /home/"$USERNAME"/.config/terminator || :  # don't abort script in case dir already exists
+cp ./config/terminator/config /home/"$USERNAME"/.config/terminator
+
+# SHELL
+apt install zsh
+# oh-my-zsh
+sudo -u "$USERNAME" bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+# autojump
+apt install autojump
+echo 'source /usr/share/autojump/autojump.sh' >> /home/"$USERNAME"/.zshrc
+# syntax highlighting
+sudo -u "$USERNAME" bash -c "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+echo 'source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> /home/"$USERNAME"/.zshrc
+# auto-suggestions
+sudo -u "$USERNAME" bash -c "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+sed -i '0,/plugins=(git)/{s/plugins=(git).*/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/}' /home/"$USERNAME"/.zshrc
+
+# TOOLS
+apt install yamllint
+apt install shellcheck
+apt install tree
+
+# don't melt your eyes
+apt install redshift

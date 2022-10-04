@@ -1,0 +1,20 @@
+#! /bin/bash
+# ------------------------------------------------------------------------------
+# Author: gomesdigital, 04/10/2022
+# Last Modified: 04/10/2022
+# ------------------------------------------------------------------------------
+# The objective of this project is to establish repeatable setups across new 
+# machines.
+#   * Config files in the repo should be updated from time to time.
+#   * Programs should be categorized into their specific scripts to keep things
+#     modular.
+# 
+# This script serves as the 'master script'. You can run things as root
+# or your home user as necessary. 
+#
+# - comment anything you don't need.
+# ------------------------------------------------------------------------------
+
+set -e  # exit on error
+
+sudo ./scripts/essentials
