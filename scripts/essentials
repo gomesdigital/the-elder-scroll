@@ -40,3 +40,6 @@ apt install tree
 
 # don't melt your eyes
 apt install redshift
+
+# hotkey any application
+cp scripts/focus /usr/local/bin
