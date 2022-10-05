@@ -1,0 +1,19 @@
+#! /bin/bash
+# ---------------------------------------
+# Author: gomesdigital, 05/10/2022
+# Last Modified: 05/10/2022
+# ---------------------------------------
+# Configuration specific to the GNOME DE.
+# ---------------------------------------
+
+source ./config/env  # load user config
+
+if [[ "$TERMINAL_HOTKEY" == '<Alt>space' ]]; then
+  gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Alt>w']"  # remap the window options key-binding (default is <Alt>space)
+fi
+
+# configure key-binding to toggle terminal on demand
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding \'"$TERMINAL_HOTKEY"\'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'toggle terminal focus'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'bash /usr/local/bin/focus terminator'

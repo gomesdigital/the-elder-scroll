@@ -18,3 +18,4 @@
 set -e  # exit on error
 
 sudo ./scripts/essentials
+./scripts/gnome
