@@ -1,0 +1,12 @@
+#! /bin/bash
+# ---------------------------------------
+# Author: gomesdigital, 0/10/2022
+# Last Modified: 08/10/2022
+# ---------------------------------------
+# Installs package managers only.
+# ---------------------------------------
+
+apt install python3-pip
+apt install npm
+apt install snap
+apt install flatpak
