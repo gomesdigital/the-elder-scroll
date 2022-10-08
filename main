@@ -21,3 +21,4 @@ sudo ./scripts/package-managers
 sudo ./scripts/essentials
 ./scripts/gnome
 ./scripts/python-modules
+sudo ./scripts/databases
