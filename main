@@ -22,3 +22,4 @@ sudo ./scripts/essentials
 ./scripts/gnome
 ./scripts/python-modules
 sudo ./scripts/databases
+sudo ./scripts/networking

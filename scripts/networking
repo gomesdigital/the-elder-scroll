@@ -1,0 +1,14 @@
+#! /bin/bash
+# ---------------------------------------------
+# Author: gomesdigital, 08/10/2022
+# Last Updated: 08/10/2022 
+# ---------------------------------------------
+# Tools regarding networking.
+# ---------------------------------------------
+
+apt install openssh-server
+apt install traceroute
+apt install whois
+apt install nmap
+
+snap install postman
