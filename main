@@ -23,3 +23,4 @@ sudo ./scripts/essentials
 ./scripts/python-modules
 sudo ./scripts/databases
 sudo ./scripts/networking
+sudo ./scripts/comms

@@ -1,0 +1,11 @@
+#! /bin/bash
+# ---------------------------------------------
+# Author: gomesdigital, 09/10/2022
+# Last Updated: 09/10/2022 
+# ---------------------------------------------
+# Installs communication programs.
+# ---------------------------------------------
+
+apt install slack
+apt install discord
+# zoom requires dpkg from https://zoom.us/download?os=linux
