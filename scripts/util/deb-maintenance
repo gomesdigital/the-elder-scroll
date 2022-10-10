@@ -1,0 +1,15 @@
+# ---------------------------------------------
+# Author: gomesdigital, 10/10/2022
+# Last Updated: 10/10/2022 
+# ---------------------------------------------
+# Notes, because I always forget how to do this.
+# ---------------------------------------------
+
+# unpack
+mkdir tmp
+dpkg-deb -R original.deb tmp
+
+# edit your things 
+
+# repack
+dpkg-deb -b tmp fixed.deb
