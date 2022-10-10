@@ -39,6 +39,8 @@ apt install shellcheck
 apt install tree
 apt install python3.10-venv  # dependency for python venvs
 sudo -u "$USERNAME" bash -c "pip install pycodestyle"
+apt install xclip  # pipe output straight to the clipboard
+sudo -u "$USERNAME" bash -c "echo alias clip='xclip -sel c' >> ~/.zshrc"
 
 # don't melt your eyes
 apt install redshift
