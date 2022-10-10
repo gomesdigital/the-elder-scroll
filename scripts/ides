@@ -1,0 +1,12 @@
+#! /bin/bash
+# ---------------------------------------------
+# Author: gomesdigital, 10/10/2022
+# Last Updated: 10/10/2022 
+# ---------------------------------------------
+# Installs IDEs modules only.
+# ---------------------------------------------
+
+apt install code
+
+snap install pycharm-proffesional --classic
+snap install intellij-idea-ultimate --classic
