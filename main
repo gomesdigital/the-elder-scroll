@@ -25,3 +25,4 @@ sudo ./scripts/databases
 sudo ./scripts/networking
 sudo ./scripts/comms
 sudo ./scripts/ides
+sudo ./scripts/misc

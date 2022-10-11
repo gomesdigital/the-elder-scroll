@@ -1,0 +1,16 @@
+#! /bin/bash
+# ---------------------------------------------
+# Author: gomesdigital, 11/10/2022
+# Last Updated: 11/10/2022 
+# ---------------------------------------------
+# Things yet to be classified.
+# ---------------------------------------------
+
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install 16
+nvm install 18
+
+apt install aws-cli
+
+npm install -g typescript
