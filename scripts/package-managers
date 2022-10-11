@@ -9,4 +9,3 @@
 apt install python3-pip
 apt install npm
 apt install snapd
-apt install flatpak
