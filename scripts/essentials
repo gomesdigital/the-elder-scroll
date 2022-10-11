@@ -6,10 +6,6 @@
 # The essentials to get things done, comfortably.
 # ---------------------------------------------
 
-set -e  # exit on error
-
-source ./config/env  # load user configurations
-
 # EDITOR
 apt install vim
 cp ./config/vim/.vimrc /home/"$USERNAME"
