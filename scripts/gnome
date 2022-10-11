@@ -20,3 +20,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 # disable dock
 gnome-extensions disable cosmic-dock@system76.com
+
+# set wallpaper
+cp -r ./wallpapers /home/"$USERNAME"/Pictures
+gsettings set org.gnome.desktop.background picture-uri "file:///home/"$USERNAME"/Pictures/wallpapers/gruvbox/coffee-beans.jpg"
