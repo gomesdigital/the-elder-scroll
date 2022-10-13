@@ -6,6 +6,8 @@
 # The essentials to get things done, comfortably.
 # ---------------------------------------------
 
+source ./config/env
+
 # EDITOR
 apt install vim
 cp ./config/vim/.vimrc /home/"$USERNAME"
