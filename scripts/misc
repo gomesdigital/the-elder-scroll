@@ -17,3 +17,5 @@ sed -i '/^plugins=(git.*/a plugins+=(zsh-nvm)' /home/\"$USERNAME\"/.zshrc;
 apt install awscli
 
 npm install -g typescript
+
+snap install spotify
