@@ -8,5 +8,5 @@
 
 apt install code
 
-snap install pycharm-proffesional --classic
+snap install pycharm-professional --classic
 snap install intellij-idea-ultimate --classic
