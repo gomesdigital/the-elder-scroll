@@ -17,6 +17,8 @@
 
 set -e  # exit on error
 
+sudo apt update
+
 sudo ./scripts/package-managers
 sudo ./scripts/essentials
 ./scripts/gnome
@@ -26,3 +28,4 @@ sudo ./scripts/networking
 sudo ./scripts/comms
 sudo ./scripts/ides
 sudo ./scripts/misc
+sudo ./scripts/containers
