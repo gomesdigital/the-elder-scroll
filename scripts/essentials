@@ -1,7 +1,7 @@
 #! /bin/bash
 # ---------------------------------------------
 # Author: gomesdigital, 04/10/2022
-# Last Updated: 04/10/2022 
+# Last Updated: 16/10/2022 
 # ---------------------------------------------
 # The essentials to get things done, comfortably.
 # ---------------------------------------------
@@ -36,7 +36,10 @@ apt install yamllint
 apt install shellcheck
 apt install tree
 apt install python3.10-venv  # dependency for python venvs
-sudo -u "$USERNAME" bash -c "pip install pycodestyle"
+sudo -u "$USERNAME" bash -c "
+pip install pycodestyle;
+echo export PATH=$PATH:/home/$USERNAME/.local/bin >> /home/$USERNAME/.zshrc
+"
 apt install xclip  # pipe output straight to the clipboard
 sudo -u "$USERNAME" bash -c 'echo alias clip=\"xclip -sel c\" >> ~/.zshrc'
 
