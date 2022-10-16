@@ -24,3 +24,4 @@ gnome-extensions disable cosmic-dock@system76.com
 # set wallpaper
 cp -r ./wallpapers /home/"$USERNAME"/Pictures
 gsettings set org.gnome.desktop.background picture-uri "file:///home/$USERNAME/Pictures/wallpapers/gruvbox/coffee-beans.jpg"
+gsettings set org.gnome.desktop.background picture-uri-dark "file:///home/$USERNAME/Pictures/wallpapers/gruvbox/coffee-beans.jpg"
