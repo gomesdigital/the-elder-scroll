@@ -7,6 +7,6 @@
 # ---------------------------------------------
 
 snap install slack --classic
+snap install zoom-client
 
 apt install discord
-# zoom requires dpkg from https://zoom.us/download?os=linux
