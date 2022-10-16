@@ -47,4 +47,6 @@ sudo -u "$USERNAME" bash -c 'echo alias clip=\"xclip -sel c\" >> ~/.zshrc'
 apt install redshift
 
 # hotkey any application
+apt install xdotool
+apt install wmctrl
 cp scripts/util/focus /usr/local/bin
