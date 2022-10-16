@@ -1,0 +1,17 @@
+#! /bin/bash
+# ---------------------------------------------
+# Author: gomesdigital, 16/10/2022
+# Last Updated: 16/10/2022 
+# ---------------------------------------------
+# Things that should happen when the install is
+# finish.
+# ---------------------------------------------
+
+source ./config/env
+
+apt install neofetch
+
+sudo -u "$USERNAME" bash -c "
+chsh -s /bin/zsh
+terminator --command='neofetch; zsh;'
+"

@@ -29,3 +29,4 @@ sudo ./scripts/comms
 sudo ./scripts/ides
 sudo ./scripts/misc
 sudo ./scripts/containers
+sudo ./scripts/exit-sequence
