@@ -6,6 +6,7 @@
 # Installs communication programs.
 # ---------------------------------------------
 
-apt install slack
+snap install slack --classic
+
 apt install discord
 # zoom requires dpkg from https://zoom.us/download?os=linux
