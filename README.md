@@ -26,8 +26,10 @@ Post-install script for new machines (Debian, GNOME).
     yes | ./main 2> error.log
     ```
     if you want to install hands free and catch any errors.
-    
+ 
 ## What's Inside
+
+![Screenshot from 2022-10-17 19-35-29](https://user-images.githubusercontent.com/69418528/196109634-42496cb9-4d14-41e8-8ce2-a5d34a2b4792.png)
 
 ### essentials
 
